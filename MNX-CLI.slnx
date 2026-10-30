@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/MNXFile.Cli.csproj" />
+  <Project Path="interactive/MNXFile.Interactive.csproj" />
+  <Project Path="tests/MNXFile.Cli.Smoke/MNXFile.Cli.Smoke.csproj" />
+</Solution>

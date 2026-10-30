@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Mash.UI.MNXFile.CLI</RootNamespace>
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- Keep Unicode paths and case mapping without an ICU runtime dependency. -->
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PublishAot>true</PublishAot>
+    <AssemblyName>mnx</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Mash.MNXFile.Client" Version="1.2.0-alpha.3" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+# Compiler, IDE and local build state
+[Bb]in/
+[Oo]bj/
+.vs/
+.idea/
+*.user
+*.suo
+*.DotSettings.user
+BuildNumber.txt.lock
+*.pending
+__pycache__/
+*.pyc
+*.log
+*.binlog
+*.dbg
+*.pdb
+*.nupkg
+*.snupkg
+
+# Personal archives, recovery queues, exported keys and local environments
+*.mnx
+*.mnq
+*.mnx-key
+.mnxdefaultkey
+.env
+.env.*
+
+# Local planning history; user-facing documentation lives directly under docs/
+/docs/superpowers/

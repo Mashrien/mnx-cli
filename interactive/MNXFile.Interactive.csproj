@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Mash.UI.MNXFile.CLI</RootNamespace>
+    <TargetFramework>net10.0</TargetFramework>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PublishAot>true</PublishAot>
+    <AssemblyName>mnxi</AssemblyName>
+    <StartupObject>Mash.UI.MNXFile.CLI.InteractiveProgram</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Mash.MNXFile.Client" Version="1.2.0-alpha.3" />
+    <Compile Include="../src/**/*.cs" Exclude="../src/obj/**;../src/bin/**;../src/EntryPoint.cs" LinkBase="Shared" />
+  </ItemGroup>
+</Project>
