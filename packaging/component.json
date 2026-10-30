@@ -1,0 +1,20 @@
+{
+  "component": "cli",
+  "name": "mnx-cli",
+  "summary": "MNX archive command line and interactive clients",
+  "url": "https://github.com/Mashrien/mnx-cli",
+  "binaries": [
+    "mnx",
+    "mnxi"
+  ],
+  "required_notices": {
+    "linux-x64": [
+      "dotnet-LICENSE.txt",
+      "dotnet-ThirdPartyNotices.txt"
+    ],
+    "win-x64": [
+      "dotnet-LICENSE.txt",
+      "dotnet-ThirdPartyNotices.txt"
+    ]
+  }
+}

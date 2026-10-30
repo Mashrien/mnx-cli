@@ -16,6 +16,15 @@ Both call the separately installed **[MNXFile](https://github.com/Mashrien/MNXFi
 native engine. Archive code and codecs belong to that project. For the desktop GUI,
 see **[MNXArchiver](https://github.com/Mashrien/MNXArchiver)**.
 
+## Downloads and installation
+
+[Releases](https://github.com/Mashrien/mnx-cli/releases) contain **mnx-cli** RPM/DEB,
+a portable Linux tar and a Windows x64 ZIP. Every package contains both `mnx` and
+`mnxi`. Install the [MNXFile engine](https://github.com/Mashrien/MNXFile/releases)
+first; applications do not bundle it. Linux requires glibc2.39+ and OpenSSL3.
+Windows10 x64 and later use the engine ZIP's per-user installer. No installed .NET
+runtime is needed. [Packaging instructions](packaging/README.md) cover release builds.
+
 ## Quick use
 
 ```sh
@@ -97,8 +106,8 @@ Neither executable embeds a private copy of the archive engine or its codecs.
 Releases go to `../MNX_Builds/mnx-cli/linux-x64/` or `win-x64/` and also stage Linux
 executables in `../MNX_Builds/binaries-final/`. Intermediates stay under
 `../mnx_clutter/build/mnx-cli/`. `MNXBuildRoot`, `MNXReleaseRoot` and `MNXFinalRoot`
-override those paths. Building does not install anything. RPM/DEB packaging is not
-yet automated; the intended package name is `mnx-cli`, containing both executables.
+override those paths. Building does not install anything. [Packaging scripts](packaging/README.md) create
+`mnx-cli` RPM/DEB and portable archives, containing both executables.
 
 ## Source map and checks
 
