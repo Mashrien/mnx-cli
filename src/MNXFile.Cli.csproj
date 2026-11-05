@@ -11,6 +11,8 @@
     <AssemblyName>mnx</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
+    <!-- Keep colocated libraries usable without a system-wide ldconfig entry. -->
+    <LinkerArg Include="-Wl,-rpath,'$ORIGIN'" Condition="$([MSBuild]::IsOSPlatform('Linux')) and '$(RuntimeIdentifier)' != 'win-x64'" />
     <PackageReference Include="Mash.MNXFile.Client" Version="1.2.0-alpha.3" />
   </ItemGroup>
 </Project>

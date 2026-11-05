@@ -11,6 +11,8 @@
     <StartupObject>Mash.UI.MNXFile.CLI.InteractiveProgram</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <!-- Match mnx's portable user-install library lookup. -->
+    <LinkerArg Include="-Wl,-rpath,'$ORIGIN'" Condition="$([MSBuild]::IsOSPlatform('Linux')) and '$(RuntimeIdentifier)' != 'win-x64'" />
     <PackageReference Include="Mash.MNXFile.Client" Version="1.2.0-alpha.3" />
     <Compile Include="../src/**/*.cs" Exclude="../src/obj/**;../src/bin/**;../src/EntryPoint.cs" LinkBase="Shared" />
   </ItemGroup>

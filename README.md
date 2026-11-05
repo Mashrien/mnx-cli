@@ -18,6 +18,8 @@ see **[MNXArchiver](https://github.com/Mashrien/MNXArchiver)**.
 
 ## Downloads and installation
 
+Latest source changes: [portable Linux library lookup](docs/releases/1.2.0-alpha.5.md).
+
 [Releases](https://github.com/Mashrien/mnx-cli/releases) contain **mnx-cli** RPM/DEB,
 a portable Linux tar and a Windows x64 ZIP. Every package contains both `mnx` and
 `mnxi`. Install the [MNXFile engine](https://github.com/Mashrien/MNXFile/releases)
